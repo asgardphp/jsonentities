@@ -8,7 +8,6 @@ class JsonentitiesTest extends \PHPUnit_Framework_TestCase {
 		$container['cache'] = new \Asgard\Cache\NullCache();
 		$container['config'] = new \Asgard\Config\Config();
 		$container['entitiesmanager'] = new \Asgard\Entity\EntitiesManager($container);
-		\Asgard\Entity\Entity::setcontainer($container);
 
 		$controller = new Fixtures\Controller($container);
 		$controller->addFilter(new \Asgard\Jsonentities\Filter);
