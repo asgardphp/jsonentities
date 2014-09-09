@@ -8,11 +8,10 @@
 	}],
 	"require": {
         "php": ">=5.4.0",
-        "asgard/http": "@dev",
-        "asgard/entity": "@dev"
+        "asgard/http": "v0.*",
+        "asgard/entity": "v0.*"
 	},
     "autoload": {
         "psr-4": {"Asgard\\Jsonentities\\": "."}
-    },
-    "minimum-stability": "dev"
+    }
 }
