@@ -13,12 +13,12 @@ class JsonentitiesTest extends \PHPUnit_Framework_TestCase {
 		$controller->addFilter(new \Asgard\Jsonentities\Filter);
 		$res = $controller->run('index');
 
-		$this->assertEquals('[{"title":"The title 1!","content":"The content 1!"},{"title":"The title 2!","content":"The content 2!"}]', $res->content);
+		$this->assertEquals('[{"id":null,"title":"The title 1!","content":"The content 1!"},{"id":null,"title":"The title 2!","content":"The content 2!"}]', $res->content);
 
 		$controller = new Fixtures\Controller($container);
 		$controller->addFilter(new \Asgard\Jsonentities\Filter);
 		$res = $controller->run('show');
 
-		$this->assertEquals('{"title":"The title!","content":"The content!"}', $res->content);
+		$this->assertEquals('{"id":null,"title":"The title!","content":"The content!"}', $res->content);
 	}
 }
