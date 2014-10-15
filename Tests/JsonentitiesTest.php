@@ -4,10 +4,10 @@ namespace Asgard\Jsonentities\Tests;
 class JsonentitiesTest extends \PHPUnit_Framework_TestCase {
 	public function testJson() {
 		$container = new \Asgard\Container\Container;
-		$container['hooks'] = new \Asgard\Hook\HooksManager($container);
+		$container['hooks'] = new \Asgard\Hook\HookManager($container);
 		$container['cache'] = new \Asgard\Cache\NullCache();
 		$container['config'] = new \Asgard\Config\Config();
-		$container['entitiesmanager'] = new \Asgard\Entity\EntitiesManager($container);
+		$container['entityManager'] = new \Asgard\Entity\EntityManager($container);
 
 		$controller = new Fixtures\Controller($container);
 		$controller->addFilter(new \Asgard\Jsonentities\Filter);
