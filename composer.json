@@ -7,17 +7,16 @@
         "email": "michel@hognerud.net"
     }],
     "require": {
-        "php": ">=5.4.0",
-        "asgard/http": "0.*",
-        "asgard/entity": "0.*"
+        "php": ">=5.5.9",
+        "asgard/http": "~0.3.0",
+        "asgard/entity": "~0.3.0"
     },
     "autoload": {
         "psr-4": {"Asgard\\Jsonentities\\": "."}
     },
-    "minimum-stability": "dev",
     "extra": {
         "branch-alias": {
-            "dev-master": "0.2-dev"
+            "dev-master": "0.3-dev"
         }
     }
 }
